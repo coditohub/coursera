@@ -1,5 +1,5 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -8,84 +8,99 @@ h1 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
     text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 p {
-	/* Centrando el Texto */    
-	width: 100%;
-    height: 150px;
-	margin-right: auto;
-	margin-left: auto;
-	/*****************/
-	font-family: Tahoma, Geneva, sans-serif;
+    /* centrando el texto */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /********************/
+    /* ****** text ******/
+    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     color: black;
-    /****************/
+    /********************/
+    /***** spacing ******/
+    height: 150px;
+    padding: 25px 10px 10px 10px;
+    /******************/
+    /***** border,colors */
     border: 1px solid black;
-    background-color: darkgray;
-    /****************/
-    padding-top: 20px;
-    
+    background-color: #b1abab;
+    /******************/
 }
 
 .row {
-	width: 100%;
+    width: 100%;
 }
 
-.title1, .title2, .title3 {
-    position: absolute;
-    top: 0;
+.title {
+    /***** Spacing ****/
+    float: right;
+    top: 2px;
     right: 10px;
-    height: 20px;
-    width: 50px;
-    border: 1px solid red;
-}
-.title1 {
-    background:#4e12ef;
+    height: 25px;
+    width: 120px;
+    /******************/
+    /********border, color **/
+    border: 1px solid #312e2e;
+    background-color: cornflowerblue;
+    /******************/
+    /******** text *******/
+    font-size: 1.25em;
+    color: white;
+    text-align: center;
+    /******************/
 }
 
-.title2 {
-    background: #43d830;
+.t1 {
+    background-color: #0b2091;
 }
-.title3 {
-    background: #ffa700;
+
+.t2 {
+    background-color: crimson;
 }
-/************** DESKTOP VIEW *************/
+
+.t3 {
+    background-color: darkkhaki;
+}
+/************** DESKTOP VIEW ****************/
 @media (min-width: 992px) {
-	.col-lg-1, .col-lg-2, .col-lg-3 {
-		float: left;
-        padding: 0 10px 10px 10px;
+    .col-lg {
+        float: left;
         width: 33%;
-        position: relative;
-
-	}
-
+        padding: 10px;
+    }
 }
 
-/************** TABLET VIEW *************/
-@media (min-width: 768px)  and (max-width: 991px){
-	.col-md-1, .col-md-2 {
+/************** TABLET VIEW ****************/
+@media (min-width: 768px) and (max-width: 991px){
+    .col-md-row1 {
         float: left;
-		width: 50%;
-        padding: 0 10px 10px 10px;  
-        position: relative;
-	}
+        width: 50%;
+        padding: 10px;
+    }
     
-    .col-md-3 {
+    .col-md-row2 {
         float: left;
         width: 100%;
-        padding: 0 10px 10px 10px;
-        position: relative;
-    }   
+        padding: 10px;
+    }
 }
 
-/************** MOBILE VERSION *************/
+/************** SMALL VIEW ****************/
 @media (max-width: 767px) {
-	.col-sm {
-        padding: 0 10px 10px 10px;
-        position: relative;
-	}
-  
+    .col-sm {
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    p {
+        height: auto;
+    }
 }
